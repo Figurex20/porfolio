@@ -1,2 +1,3 @@
 # Mi porfolio
-![image](https://github.com/user-attachments/assets/f93aa264-f3cd-402c-8205-43ec0067c6bd)
+![image](https://github.com/user-attachments/assets/465ae5c9-2b16-4629-881b-d0e79e7f1a73)
+
