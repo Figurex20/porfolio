@@ -1,0 +1,52 @@
+---
+const personalImageAlt = "Kenneth Gomez"
+import Badge from "./Badge.astro"
+import MailIcon from "../icons/MailIcon.astro"
+import LinkedinIcon from "../icons/LinkedinIcon.astro"
+import GithubIcon from "../icons/GithubIcon.astro"
+import SocialPill from "./SocialPill.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="/photo.webp"
+      alt={personalImageAlt}
+    />
+    <a
+      href="hhttp://linkedin.com/in/kenneth-alonso-gómez-martínez-8032b5210"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight  dark:text-white"
+  >
+  Hey, soy kenneth
+  </h1>
+  <p
+    class="mt-6 text-xl  dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+  +2 años de expereiencia.<strong
+      >Desarrollador Web y Soporte Tecnico de Costa Rica.</strong
+    > Especializado en resolver problemas y optimizar flujos de trabajo en un 30%.
+  </p>
+  <nav class="flex gap-4 mt-8 flex-wrap">
+    <SocialPill href="http://linkedin.com/in/kenneth-alonso-gómez-martínez-8032b5210">
+        <LinkedinIcon class="size-4 md:size-6"/>
+        LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/Figurex20">
+        <GithubIcon class="size-4 md:size-6"/>
+        Github
+    </SocialPill>
+    <SocialPill href="mailto:kennethggm12@gmail.com">
+        <MailIcon class="size-4 md:size-6"/>
+        Contactame
+    </SocialPill>
+</nav>
+</div>

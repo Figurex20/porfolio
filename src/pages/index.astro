@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import LinkedinIcon from '../icons/LinkedinIcon.astro'
+import GithubIcon from '../icons/GithubIcon.astro';
+import MailIcon from '../icons/MailIcon.astro';
+import Experience from '../components/Experience.astro';
+import SectionContainer  from "../components/SectionContainer.astro";
+import Briefcase from '../icons/Briefcase.astro';
+import CodeIcon from '../icons/CodeIcon.astro';
+import Proyects from '../components/Proyects.astro';
+import Hero from '../components/Hero.astro';
+import AboutMe from '../components/AboutMe.astro';
+import ProfileCheckIcon from '../icons/ProfileCheckIcon.astro';
+---
+
+<Layout 
+	title="Porfolio de kenneth - Desarrollador y Programador Web"
+	description="Contrata a kenneth para crear tu aplicacion Web"
+	>
+	<main class="px-4">
+		<SectionContainer class="py-16 md:py-36">
+			<Hero>
+			</slot>
+		  </Hero>
+		</SectionContainer>
+		
+		<div class="space-y-24">
+			<SectionContainer id="experiencia">
+			  <h2
+				class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+			  >
+				<Briefcase class="size-8" />
+				Experiencia laboral
+			  </h2>
+			  <Experience />
+			</SectionContainer>
+		
+			<SectionContainer id="proyectos">
+			  <h2
+				class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+			  >
+				<CodeIcon class="size-7" />
+				Proyectos
+			  </h2>
+			  <Proyects />
+			</SectionContainer>
+		
+			<SectionContainer id="sobre-mi">
+			  <h2
+				class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
+			  >
+				<ProfileCheckIcon class="size-8" />
+				Sobre mí
+			  </h2>
+			  <AboutMe />
+			</SectionContainer>
+		  </div>
+	</main>
+</Layout>
+
+
